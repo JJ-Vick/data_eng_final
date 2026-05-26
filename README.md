@@ -35,6 +35,16 @@ Validation queries confirmed:
 - correct table structure
 - successful querying of ingested data
 
+## EDA update:
+
+After further analysis:
+
+- Added multiple visualizations, each one with:
+    - Brief interpretations
+    - Easy to understand plots
+
+Any and all steps taken during this stage will be present in the new EDA notebook
+
 ### Main Files
 
 - Notebooks: 
