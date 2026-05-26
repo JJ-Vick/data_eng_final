@@ -12,13 +12,13 @@ This project cleans and ingests the dirty Adult Income dataset from the course f
 1. Load the semicolon-separated dirty CSV.
 2. Remove the accidentally saved index column.
 3. Standardize column names.
-4. Trim whitespace from text fields.
-5. Convert dirty missing markers such as `?`, `N/A`, blank values, and `unknown` to missing values.
-6. Clean numeric fields polluted with text such as `43 YEARS`, `48 HRS`, and `0 USD`.
-7. Apply domain checks for age, education number, final weight, capital gain/loss, and hours per week.
+4. Strip whitespaces from text fields.
+5. Convert dirty missing value representations such as `?`, `N/A`, blank values, and `unknown` to actual missing values.
+6. Clean numeric fields filled with text such as `43 YEARS`, `48 HRS`, and `0 USD`.
+7. Apply checks for age, education number, final weight, capital gain/loss, and hours per week.
 8. Standardize categorical values such as `US`, `United States`, `M`, `F`, `low-income`, and `high-income`.
 9. Remove duplicate rows.
-10. Impute numeric missing values with the median.
+10. Replace numeric missing values with the median.
 11. Fill categorical missing values with `Unknown`.
 12. Export the cleaned dataset to `output/project/adult_income_clean.csv`.
 13. Ingest the cleaned CSV into PostgreSQL using Docker Compose.
